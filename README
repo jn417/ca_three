@@ -1,0 +1,81 @@
+ECM1400 CA3: Smart Alarm
+
+This web app reflect my interpretation of the CA3 specification. As such, it
+allows users to set and delete alarms that subsequently give them updates on
+local and national covid news, local weather and news headlines. As well as
+automatically notifying them to of the aforementioned every hour on the hour,
+silently.
+
+REQUIREMENTS
+
+  Python 3.7 or subsequent versions.
+  A web broswer, this was created and tested using Chrome so I would recommend
+  that.
+
+  I used the following python modules and packages.
+
+  Packages:
+    Flask
+    uk_covid19
+
+  Modules:
+    PyTTSx3
+    sched
+    time
+    requests
+    json
+    logging
+
+INSTALLATION
+
+  To install the above packages and modules you will need to type the following
+  into your command line.
+
+  pip install Flask
+  pip install PyTTSx3
+  pip install requests
+  pip install uk_covid19
+
+TESTING
+
+  Functionality was tested using unit tests and the pytest framework.
+
+CONFIG FILE
+
+  The config.json file contains information such as the api keys and third party
+  services used. Also the location of the local weather news. These can be
+  edited.
+
+LOGGING
+
+  The sys.log file contains a record of all the alarms set and deleted and
+  notifications deleted. As well as other information, such as error data.
+
+EXTRA INFORMATION
+
+  Author:
+    John Norman
+
+  License:
+
+MIT License
+
+Copyright (c) 2020 John Wilfred Arthur Norman
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

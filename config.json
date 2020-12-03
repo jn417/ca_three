@@ -1,0 +1,10 @@
+[API_keys]
+weather = e2ca98eddd3847d2473cf03915352b14
+news = 78ecc7d107854ca0b88e39beb0e10c4e
+
+[third_parties]
+weather_news = http://api.openweathermap.org/data/2.5/weather?
+headline_news = https://newsapi.org/v2/top-headlines?
+
+[city]
+my_city = Exeter
